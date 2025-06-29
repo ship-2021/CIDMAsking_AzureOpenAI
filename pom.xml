@@ -1,0 +1,143 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ubs</groupId>
+  <artifactId>ubs-analytics-validator</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <properties>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.14.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.14.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
+      <!-- Selenium -->
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.32.0</version>
+      </dependency>
+
+      <!-- Cucumber Java -->
+
+
+      <!-- Cucumber JUnit Platform Engine (for JUnit 5) -->
+
+
+      <!-- JUnit 5 API and Engine -->
+
+
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-devtools-v134</artifactId>
+      <version>4.32.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.16.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20240303</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.12</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.16</version>
+    </dependency>
+
+      <!-- SLF4J API -->
+
+
+      <!-- Logback Classic (SLF4J backend) -->
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.4.14</version>
+      </dependency>
+    <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+    <dependency>
+      <groupId>net.masterthought</groupId>
+      <artifactId>cucumber-reporting</artifactId>
+      <version>5.9.0</version>
+    </dependency>
+    </dependencies>
+
+
+
+
+  <build>
+    <plugins>
+      <plugin>
+
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>22</source>
+          <target>22</target>
+<!--          <compilerArgs>-->
+<!--            <arg>-Xlint:-options</arg>-->
+<!--          </compilerArgs>-->
+        </configuration>
+      </plugin>
+
+
+      <!--      <plugin>-->
+<!--        <groupId>net.masterthought</groupId>-->
+<!--        <artifactId>maven-cucumber-reporting</artifactId>-->
+<!--        <version>5.7.0</version>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>generate-cucumber-report</id>-->
+<!--            <phase>test</phase>-->
+<!--            <goals>-->
+<!--              <goal>generate</goal>-->
+<!--            </goals>-->
+<!--            <configuration>-->
+<!--              <projectName>UBS Analytics</projectName>-->
+<!--              <jsonFiles>-->
+<!--                <param>target/reports/cucumber-report</param>-->
+
+<!--              </jsonFiles>-->
+<!--              <outputDirectory>target/combined-report</outputDirectory>-->
+<!--            </configuration>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
+    </plugins>
+  </build>
+</project>
